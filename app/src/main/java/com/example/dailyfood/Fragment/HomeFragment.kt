@@ -20,7 +20,6 @@ private lateinit var binding: FragmentHomeBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
-
         }
     }
 
@@ -31,8 +30,6 @@ private lateinit var binding: FragmentHomeBinding
         // Inflate the layout for this fragment
         binding = FragmentHomeBinding.inflate(inflater,container,false)
         return binding.root
-
-
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -59,7 +56,6 @@ private lateinit var binding: FragmentHomeBinding
         val popularFoodName = listOf("Burger","Sandwich","Pizza","Meat Box")
         val popularFoodPrice = listOf("$6","$5","$10","$7")
         val popularFoodImg = listOf(R.drawable.menu1,R.drawable.menu2,R.drawable.menu3,R.drawable.menu4)
-        //val popularAdptr = PopularAdapter(popularFoodName,popularFoodPrice,popularFoodImg)
         binding.recyclerViewPopular.layoutManager = LinearLayoutManager(requireContext())
         binding.recyclerViewPopular.adapter = PopularAdapter(popularFoodName,popularFoodPrice,popularFoodImg)
     }
