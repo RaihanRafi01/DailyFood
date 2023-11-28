@@ -16,7 +16,7 @@ class LoginActivity : AppCompatActivity() {
             startActivity(iReg)
         }
         binding.btnLogin.setOnClickListener {
-            val itest = Intent(this,ChooseLocation::class.java)
+            val itest = Intent(this,MainActivity::class.java)
             startActivity(itest)
         }
     }
