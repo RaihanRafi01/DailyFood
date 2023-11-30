@@ -29,7 +29,14 @@ private lateinit var binding: FragmentHomeBinding
     ): View? {
         // Inflate the layout for this fragment
         binding = FragmentHomeBinding.inflate(inflater,container,false)
+        onClickActivity()
         return binding.root
+    }
+
+    private fun onClickActivity() {
+        binding.btnMenu.setOnClickListener {
+            MenuBottomSheetFragment().show(parentFragmentManager,"Menu")
+        }
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
