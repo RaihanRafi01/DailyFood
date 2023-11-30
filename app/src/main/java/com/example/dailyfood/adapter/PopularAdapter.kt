@@ -24,6 +24,7 @@ class PopularAdapter(private val items:List<String>,private val prices:List<Stri
             binding.popularFoodName.text = item
             binding.popularFoodPrice.text = price
             binding.imgPopularItem.setImageResource(img)
+            //binding.btnPopularAddToCart.text = "hiiiii"
         }
     }
 }
