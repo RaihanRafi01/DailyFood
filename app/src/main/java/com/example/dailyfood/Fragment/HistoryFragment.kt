@@ -15,7 +15,6 @@ class HistoryFragment : Fragment() {
     private lateinit var buyAgainAdapter : BuyAgainAdapter
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
     }
 
     override fun onCreateView(
