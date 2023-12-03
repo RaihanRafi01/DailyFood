@@ -11,7 +11,6 @@ class MenuAdapter(private val menuItems : MutableList<String>,private val menuIt
         val binding = PopularItemBinding.inflate(LayoutInflater.from(parent.context),parent,false)
         return MenuViewHolder(binding)
     }
-
     override fun onBindViewHolder(holder: MenuViewHolder, position: Int) {
         holder.bind(position)
     }
