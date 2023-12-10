@@ -1,11 +1,13 @@
 package com.example.dailyfood.Fragment
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.dailyfood.PayOutActivity
 import com.example.dailyfood.R
 import com.example.dailyfood.adapter.CartAdapter
 import com.example.dailyfood.databinding.FragmentCartBinding
@@ -24,6 +26,11 @@ class CartFragment : Fragment() {
         // Inflate the layout for this fragment
         binding = FragmentCartBinding.inflate(inflater,container,false)
         dummydata()
+        binding.btnProceed.setOnClickListener {
+            val iProceed = Intent(requireContext(),PayOutActivity::class.java)
+            startActivity(iProceed)
+        }
+
         return binding.root
     }
 

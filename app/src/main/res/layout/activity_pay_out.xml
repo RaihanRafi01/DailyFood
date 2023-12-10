@@ -17,11 +17,12 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
+
         <TextView
             android:layout_width="30dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Address" />
+            android:text="Name" />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -70,7 +71,7 @@
             android:layout_width="30dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Address" />
+            android:text="Phone" />
 
         <EditText
             android:layout_width="wrap_content"
@@ -96,7 +97,7 @@
             android:layout_width="30dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Address" />
+            android:text="Payment Method" />
 
         <EditText
             android:layout_width="wrap_content"
@@ -122,7 +123,7 @@
             android:layout_width="30dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Address" />
+            android:text="Total Ammount" />
 
         <EditText
             android:layout_width="wrap_content"
@@ -132,5 +133,11 @@
             android:hint="Address"
             android:inputType="text|textMultiLine" />
     </LinearLayout>
+
+    <Button
+        android:id="@+id/btnPlaceMyOrder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Place My Order" />
 
 </LinearLayout>
