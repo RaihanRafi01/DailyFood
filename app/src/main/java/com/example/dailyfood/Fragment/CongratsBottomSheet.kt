@@ -27,6 +27,5 @@ class CongratsBottomSheet : BottomSheetDialogFragment() {
         return binding.root
     }
     companion object {
-
     }
 }
