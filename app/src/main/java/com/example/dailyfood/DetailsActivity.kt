@@ -10,8 +10,6 @@ class DetailsActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityDetailsBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
-
         val foodName = intent.getStringExtra("MenuItemName")
         val foodImg = intent.getIntExtra("MenuItemImg",0)
         binding.txtDetailsFoodName.text = foodName
