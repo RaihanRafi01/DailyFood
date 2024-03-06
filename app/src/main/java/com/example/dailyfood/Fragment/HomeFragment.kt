@@ -67,7 +67,4 @@ private lateinit var binding: FragmentHomeBinding
         binding.recyclerViewPopular.adapter = PopularAdapter(popularFoodName,popularFoodPrice,popularFoodImg,requireContext())
     }
 
-    companion object {
-
-    }
 }
