@@ -66,5 +66,5 @@ private lateinit var binding: FragmentHomeBinding
         binding.recyclerViewPopular.layoutManager = LinearLayoutManager(requireContext())
         binding.recyclerViewPopular.adapter = PopularAdapter(popularFoodName,popularFoodPrice,popularFoodImg,requireContext())
     }
-
+    
 }

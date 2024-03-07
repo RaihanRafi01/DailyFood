@@ -38,8 +38,6 @@ class MenuAdapter(private val menuItems : MutableList<String>,private val menuIt
                 popularFoodName.text = menuItems[position]
                 popularFoodPrice.text = menuItemPrice[position]
                 imgPopularItem.setImageResource(menuItemImg[position])
-
-
             }
         }
 
