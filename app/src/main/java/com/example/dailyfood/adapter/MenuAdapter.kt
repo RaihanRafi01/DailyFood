@@ -40,7 +40,6 @@ class MenuAdapter(private val menuItems : MutableList<String>,private val menuIt
                 imgPopularItem.setImageResource(menuItemImg[position])
             }
         }
-
     }
     interface OnClickListener {
         fun onItemClick(position: Int){
